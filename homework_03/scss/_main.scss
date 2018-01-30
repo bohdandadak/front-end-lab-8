@@ -1,0 +1,164 @@
+$bodyBackground: null !default;
+
+body {
+	background-color: $bodyBackground;
+}
+
+$contentBackground: null !default;
+
+#content {
+	width: 960px;
+	margin: 0 auto;
+	padding: 15px;
+	background: $contentBackground;
+}
+
+$HeadingColor: null !default;
+$margin: 15px;
+
+h1, h2 {
+	color: $HeadingColor;
+}
+
+$title: null !default;
+
+h1:nth-child(n+1) {
+	text-align: center;
+	text-transform: $title;
+}
+
+$imgFrame: null !default;
+
+@mixin img {
+	position: relative;
+	border: 1px solid $contentBackground;
+	box-shadow: $imgFrame;
+}
+
+.img-left {
+	margin-right: $margin;
+	@include img;
+	float: left;
+}
+
+.img-right {
+	margin: $margin;
+	@include img;
+	float: right;
+}
+
+$textColor: null !default;
+
+p {
+	color: $textColor;
+}
+
+$briefBackground: null !default;
+$briefFloat: null !default;
+$briefwidth: null !default;
+$briefPadding: null !default;
+
+.brief {
+	background-color: $briefBackground;
+	float: $briefFloat;
+	width: $briefwidth;
+	margin-right: $margin;
+	padding: $briefPadding;
+}
+
+$aColor: null !default;
+
+a {
+	color: $aColor;
+}
+
+caption {
+	text-align: right;
+}
+
+$tbody_Color: null !default;
+
+tbody {
+	background-color: $tbody_Color;
+}
+
+$th_background-color: null !default;
+
+th {
+	text-align: left;
+	background-color: $th_background-color;
+	text-transform: $title;
+	padding-left: 20px;
+}
+
+th:nth-child(-n+2) {
+	box-shadow: 2px 0px 0px 0px rgba(255, 255, 255, 1);
+}
+
+tr {
+	height: 40px;
+}
+
+th {
+	width: 60%;
+}
+
+td:nth-child(-n+2) {
+	box-shadow: 2px 0px 0px 0px $tbody_Color;
+}
+
+tr:nth-child(n+2) {
+	box-shadow: 0px 4px 0px -2px $th_background-color;
+}
+
+/* 	 Response   */
+
+$label_Color: null !default;
+
+label {
+	text-transform: uppercase;
+	display: inline-bloc;
+	color: $label_Color;
+}
+
+textarea {
+	height: 200px;
+}
+
+.row1 {
+	width: 400px;
+	display: inline-block;
+}
+
+input {
+	color: $label_Color;
+}
+
+input[type=submit] {
+	background-color: $contentBackground;
+}
+
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 7px;
+	border: 1px solid $label_Color;
+	border-radius: 4px;
+}
+
+.col-25 {
+	float: left;
+	width: 55%;
+	margin-top: 6px;
+}
+
+.col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
