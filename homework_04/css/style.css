@@ -4,7 +4,7 @@ body {
 
 .container {
 	display: grid;
-	background-image: url("img/apples.jpg");
+	background-image: url("../img/apples.jpg");
 	background-repeat: no-repeat;
 	height: 739px;
 	grid-template-columns: 900px 700px;
@@ -150,7 +150,7 @@ div.section_3 {
 	text-indent: 5mm;
 	color: white;
 	border: solid 1px white;
-	background-image: url(img/sample.jpg);
+	background-image: url(../img/sample.jpg);
 	background-repeat: no-repeat;
 }
 
@@ -160,7 +160,7 @@ div.section_3 {
 	text-indent: 5mm;
 	border: solid 1px white;
 	color: white;
-	background-image: url(img/sample2.jpg);
+	background-image: url(../img/sample2.jpg);
 	background-repeat: no-repeat;
 }
 
@@ -207,7 +207,7 @@ div.section_4 {
 	text-indent: 5mm;
 	border: solid 1px white;
 	color: white;
-	background-image: url(img/sample2.jpg);
+	background-image: url(../img/sample2.jpg);
 	background-repeat: no-repeat;
 }
 
@@ -217,7 +217,7 @@ div.section_4 {
 	text-indent: 5mm;
 	color: white;
 	border: solid 1px white;
-	background-image: url(img/sample3.jpg);
+	background-image: url(../img/sample3.jpg);
 	background-repeat: no-repeat;
 }
 
