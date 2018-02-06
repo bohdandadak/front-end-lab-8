@@ -1,0 +1,321 @@
+/*  D E S K T O P  */
+
+@media (min-width: 900px) {
+
+	/* header */
+	.header {
+		display: flex;
+		margin-left: 165px;
+	}
+
+	.logo, .header {
+		flex-direction: row;
+	}
+
+	.logo {
+		margin-top: 5px;
+	}
+
+	ul.top {
+		display: inline-flex;
+	}
+
+	.tm-nav-item {
+		list-style-type: none;
+		font-size: 20px;
+		padding-bottom: 15px;
+		padding-right: 20px;
+	}
+
+	.main-nav-link {
+		text-decoration: none;
+		color: #333;
+		font-family: arial;
+		font-weight: bold;
+	}
+
+	.main-nav-link:hover {
+		color: #39c2d7;
+	}
+
+	/* about */
+	.section-1 {
+		background-image: url(../img/banner.jpg);
+		background-repeat: no-repeat;
+		height: 440px;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	#about {
+		padding-top: 70px;
+		padding-left: 0px;
+		margin-left: 165px;
+		width: 350px;
+	}
+
+	.about {
+		word-wrap: break-word;
+		font-family: Helvetica;
+		line-height: 1.2;
+		font-size: 40px;
+		color: #fff;
+	}
+
+	/* careers */
+	#careers {
+		display: grid;
+		margin-left: 165px;
+		grid-gap: 20px;
+		grid-template-columns: 320px 320px 320px;
+		grid-template-rows: 300px 300px;
+	}
+
+	.news {
+		padding-left: 10px;
+		padding-top: 10px;
+		background-color: rgb(230, 230, 230);
+		color: #333;
+		font-family: Helvetica;
+		font-size: 19px;
+		text-decoration: none;
+	}
+
+	.news:hover {
+		background-color: #39c2d7;
+	}
+
+	span {
+		font-weight: bolder;
+	}
+
+	/* contact */
+	div#contact {
+		display: inline-flex;
+		margin-top: 25px;
+		background-color: #39c2d7;
+		width: 1320px;
+	}
+
+	nav.footer-nav {
+		margin-left: 125px;
+	}
+
+	ul.down {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.tm-footer-nav {
+		list-style-type: none;
+		padding-right: 40px;
+	}
+
+	a {
+		color: #fff;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	#contact p {
+		color: #fff;
+	}
+}
+
+
+/*   T A B L E T   */
+
+@media screen (min-width: 575px), (max-width: 899) {
+	.header {
+		margin-left: 0px;
+	}
+
+	.header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	ul.top {
+		display: flex;
+		align-items: center;
+		padding-left: 0px;
+	}
+
+	.about {
+		width: 700px;
+		word-wrap: break-word;
+		text-align: center;
+	}
+
+	#careers {
+		margin-left: 175px;
+		grid-template-columns: 472px 472px;
+	}
+
+	img.block-img {
+		padding-left: 76px;
+	}
+
+	#contact {
+		display: flex;
+		flex-direction: column;
+		margin-top: 25px;
+		width: 965px
+	}
+
+	nav.footer-nav {
+		margin-left: 0px;
+	}
+
+	.tm-footer-nav {
+		padding-right: 40px;
+	}
+
+	#contact p {
+		padding-right: 0px;
+	}
+
+	nav.footer-nav, #contact p {
+		text-align: center;
+	}
+
+	ul.down {
+		display: inline-flex;
+	}
+
+}
+
+/* 	M O B I L E  */
+
+@media screen and (max-width: 574px) {
+	.header {
+		display: flex;
+		margin-left: 0px;
+	}
+
+	.logo, .header {
+		flex-direction: column;
+	}
+
+	.logo {
+		margin-top: 5px;
+		text-align: center;
+		width: 350px;
+	}
+
+	ul.top {
+		padding-left: 0px;
+		display: flex;
+		flex-direction: column;
+		background-color: #f2f2f2;
+	}
+
+	nav.main-nav {
+		width: 350px;
+	}
+
+	.tm-nav-item {
+		list-style-type: none;
+		font-size: 20px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-top: 10px;
+		border-bottom: solid 1px silver;
+	}
+
+	.main-nav-link {
+		text-decoration: none;
+		color: #000;
+		font-family: arial;
+		font-weight: bold;
+	}
+
+	/* about */
+	.section-1 {
+		width: 350px;
+		background-image: url(../img/banner.jpg);
+		background-repeat: no-repeat;
+		height: 440px;
+	}
+
+	#about {
+		width: 326px;
+		padding-top: 300px;
+		padding-left: 0px;
+		margin-left: 10px;
+	}
+
+	p.about {
+		word-wrap: break-word;
+		font-family: Helvetica;
+		line-height: 1.2;
+		font-size: 20px;
+		color: #fff;
+		background-color: #39c2d7;
+	}
+
+	/* careers */
+	#careers {
+		display: grid;
+		margin-left: 12px;
+		grid-gap: 20px;
+		grid-template-columns: 326px;
+	}
+
+	.news {
+		padding-left: 10px;
+		padding-top: 10px;
+		background-color: rgb(230, 230, 230);
+		color: #333;
+		font-family: Helvetica;
+		font-size: 19px;
+		text-decoration: none;
+	}
+
+	.news:hover {
+		background-color: #39c2d7;
+	}
+
+	span {
+		font-weight: bolder;
+	}
+
+	/* contact */
+	div#contact {
+		display: inline-flex;
+		margin-top: 25px;
+		background-color: #39c2d7;
+		flex-direction: column;
+		width: 350px;
+	}
+
+	nav.footer-nav {
+		margin-left: 0px;
+	}
+
+	ul.down {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		padding-left: 0px;
+	}
+
+	.tm-footer-nav {
+		list-style-type: none;
+		padding-right: 40px;
+	}
+
+	a {
+		color: #fff;
+	}
+
+	#contact p {
+		color: #fff;
+		text-align: center;
+	}
+}
