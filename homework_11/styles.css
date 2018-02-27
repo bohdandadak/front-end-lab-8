@@ -1,0 +1,17 @@
+/* Your styles goes here */
+
+.children {
+  padding-left: 1em;
+}
+
+.material-icons.folder {
+  color: #ffc107;
+}
+
+.title {
+  cursor: pointer;
+}
+
+.title :hover {
+  background: #6c6c6c;
+}
